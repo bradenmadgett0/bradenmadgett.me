@@ -273,7 +273,7 @@ body {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 50%;
+    top: 10%;
     width: 320px;
     height:650px;
     background: white;
@@ -291,6 +291,94 @@ body {
     background-size:contain;
     background-repeat: no-repeat;
     opacity: 1;
+}
+
+#powerButton {
+    position: absolute;
+    right: -14px;
+    top: 140px;
+    height: 12%;
+    width: 7px;
+    border-radius: 5px;
+    background: rgb(245, 245, 245);
+    border-left: 0px solid rgb(235, 235, 235);
+    border-bottom: 0px solid rgb(235, 235, 235);
+    border-top: 0px solid rgb(235, 235, 235);
+    -webkit-transition: border .3s, right .5s; /* Safari */
+    transition: border .3s, right .5s;
+    /* background: red; */
+}
+
+#phone:hover #powerButton{
+    border-left: 2px solid rgb(235, 235, 235);
+    border-bottom: 2px solid rgb(235, 235, 235);
+    border-top: 1px solid rgb(235, 235, 235);
+    right: -18px;
+    /* transform: skewX(-1deg); */
+    /* background: red; */
+}
+
+#volumeRockers {
+    top: 120px;
+    height: 15%;
+    width: 5px;
+    left: -14px;
+    position: absolute;
+    border-radius: 5px;
+    opacity: 1;
+    -webkit-transition: left .5s; /* Safari */
+    transition: left .5s;
+
+}
+
+#volumeRockers #up{
+    height: 47.5%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: rgb(245, 245, 245);
+    border-radius: 5px
+}
+
+#volumeRockers #down{
+    height: 47.5%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgb(245, 245, 245);
+    border-radius: 5px
+}
+
+#phone:hover #volumeRockers {
+    left: -6px;
+}
+
+#chargingPort {
+    width: 12%;
+    border-radius: 8px;
+    background: rgb(225, 225, 225);
+    position: absolute;
+    bottom: -8px;
+    transform: skewX(20deg);
+    border-bottom: 0px solid rgb(235, 235, 235);
+    border-left: 0px solid rgb(240, 240, 240);
+    /* border-top: 2px solid rgb(240, 240, 240); */
+    box-sizing: border-box;
+    height: 0px;
+    opacity: 0;
+    -webkit-transition: height .3s, border .3s, bottom .3s, opacity .2s; /* Safari */
+    transition: height .3s, border .3s, bottom .3s, opacity .2s;
+    
+    /* transition-delay: .2s;
+    transition */
+}
+
+#phone:hover #chargingPort {
+    height: 10px;
+    bottom: -22px;
+    opacity: 1;
+    border-bottom: 3px solid rgb(235, 235, 235);
+    border-left: 3px solid rgb(240, 240, 240);
 }
 
 /* #phoneScreenOverlay {
