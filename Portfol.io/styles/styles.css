@@ -363,7 +363,7 @@ body {
     border-radius: 8px;
     background: rgb(22, 22, 22);
     position: absolute;
-    bottom: -8px;
+    bottom: -6px;
     transform: skewX(20deg);
     border-bottom: 0px solid  rgb(241, 210, 163);
     border-left: 0px solid  rgb(241, 210, 163);
@@ -371,16 +371,16 @@ body {
     box-sizing: border-box;
     height: 0px;
     opacity: 0;
-    -webkit-transition: height .3s, border .3s, bottom .3s, opacity .2s; /* Safari */
-    transition: height .3s, border .3s, bottom .3s, opacity .2s;
+    -webkit-transition: height .5s, border .3s, bottom .5s, opacity .3s; /* Safari */
+    transition: height .5s, border .3s, bottom .5s, opacity .3s;
     
     /* transition-delay: .2s;
     transition */
 }
 
 #phone:hover #chargingPort {
-    height: 10px;
-    bottom: -22px;
+    height: 12px;
+    bottom: -28px;
     opacity: 1;
     border-bottom: 2px solid rgb(241, 210, 163);
     border-left: 1px solid rgb(241, 210, 163);
@@ -435,7 +435,7 @@ body {
     width: 8px;
     height: 8px;
     border-radius: 8px;
-    background: rgb(34, 34, 34);
+    background: rgb(27, 34, 46);
     transform:translate(38px);
     -webkit-transition: transform .5s; /* Safari */
     transition: transform .5s;
@@ -466,6 +466,60 @@ body {
 
 #phone:hover #camera {
     transform:translate(36px);
+}
+
+#bottomGrilleLeft {
+    width: 20%;
+    height: 0px;
+    position: absolute;
+    bottom: -6px;
+    left: 55px;
+    transform: skewX(20deg);
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    -webkit-transition: height .5s, border .3s, bottom .5s, opacity .3s; /* Safari */
+    transition: height .5s, border .3s, bottom .5s, opacity .3s;
+}
+
+#bottomGrilleRight {
+    width: 20%;
+    height: 0px;
+    bottom: -6px;
+    right: 54px;
+    position: absolute;
+    transform: skewX(20deg);
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    -webkit-transition: height .5s, border .3s, bottom .5s, opacity .3s; /* Safari */
+    transition: height .5s, border .3s, bottom .5s, opacity .3s;
+}
+
+#hole {
+    height: 100%;
+    width: 15%;
+    background-color: black;
+    border-radius: 100px;
+    margin-left: 1px;
+    margin-right: 2px;
+    border-bottom: 1px solid rgb(241, 210, 163);
+    border-left: 1px solid rgb(241, 210, 163);
+    border-top: 1px solid rgb(107, 79, 36);
+    border-right: 1px solid rgb(107, 79, 36);
+    box-sizing: border-box;
+}
+
+#phone:hover #bottomGrilleRight {
+    opacity: 1;
+    height: 8px;
+    bottom: -25px
+}
+
+#phone:hover #bottomGrilleLeft {
+    opacity: 1;
+    height: 8px;
+    bottom: -25px
 }
 
 #card1 {
