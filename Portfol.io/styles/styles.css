@@ -95,6 +95,7 @@ body {
     display: flex;
     padding-left: 100px;
     box-sizing: border-box;
+    background: rgb(235, 235, 235);
 }
 
 #jumbotron {
@@ -276,9 +277,9 @@ body {
     top: 10%;
     width: 320px;
     height:650px;
-    background: white;
+    background: rgb(240, 240, 240);
     border-radius:50px;
-    border: 4px solid rgb(187, 137, 62);
+    border: 4px solid white;
     transform: skewX(0deg);
     z-index:2;
     -webkit-transition: transform .5s, border .5s, width .5s, height .5s, top .5s, border-radius .5s, opacity .5s; /* Safari */
@@ -291,6 +292,7 @@ body {
     background-size:contain;
     background-repeat: no-repeat;
     opacity: 1;
+    box-shadow: 0px 40px 60px -60px rgb(0,0,0.5);
 }
 
 #powerButton {
@@ -300,7 +302,7 @@ body {
     height: 12%;
     width: 5px;
     border-radius: 5px;
-    background: rgb(187, 137, 62);
+    background: rgb(250,250,250);
     border-left: 0px solid rgb(235, 235, 235);
     border-bottom: 0px solid rgb(235, 235, 235);
     border-top: 0px solid rgb(235, 235, 235);
@@ -311,9 +313,9 @@ body {
 }
 
 #phone:hover #powerButton{
-    border-left: 3px solid rgb(241, 210, 163);
-    border-bottom: 2px solid rgb(107, 79, 36);
-    border-top: 1px solid rgb(107, 79, 36);
+    border-left: 3px solid white;
+    border-bottom: 2px solid rgb(240, 240, 240);
+    border-top: 1px solid rgb(240, 240, 240);
     border-radius: 7px;
     right: -25px;
     width: 14px;
@@ -340,7 +342,7 @@ body {
     width: 100%;
     position: absolute;
     top: 0;
-    background: rgb(187, 137, 62);
+    background: white;
     border-radius: 5px
 }
 
@@ -349,7 +351,7 @@ body {
     width: 100%;
     position: absolute;
     bottom: 0;
-    background: rgb(187, 137, 62);
+    background: white;
     border-radius: 5px
 }
 
@@ -361,13 +363,15 @@ body {
 #chargingPort {
     width: 12%;
     border-radius: 8px;
-    background: rgb(22, 22, 22);
+    background: linear-gradient(0deg, rgba(255,255,255,1), rgba(100,100,100,.3) 100%);
     position: absolute;
     bottom: -6px;
     transform: skewX(20deg);
-    border-bottom: 0px solid  rgb(241, 210, 163);
-    border-left: 0px solid  rgb(241, 210, 163);
+    /* border-bottom: 0px solid  rgb(241, 210, 163);
+    border-left: 0px solid  rgb(241, 210, 163); */
     /* border-top: 2px solid rgb(240, 240, 240); */
+    border-bottom: 0px solid  rgb(240, 240, 240);
+    border-left: 0px solid  rgb(240, 240, 240);
     box-sizing: border-box;
     height: 0px;
     opacity: 0;
@@ -380,12 +384,12 @@ body {
 
 #phone:hover #chargingPort {
     height: 12px;
-    bottom: -28px;
+    bottom: -24px;
     opacity: 1;
-    border-bottom: 2px solid rgb(241, 210, 163);
-    border-left: 1px solid rgb(241, 210, 163);
-    border-top: 1px solid rgb(107, 79, 36);
-    border-right: 1px solid rgb(107, 79, 36);
+    /* border-bottom: 2px solid rgb(250, 250, 250);
+    border-left: 1px solid rgb(250, 250, 250);
+    border-top: 1px solid rgb(220, 220, 220);
+    border-right: 1px solid rgb(220, 220, 220); */
 }
 
 #phoneScreenOverlay {
@@ -393,8 +397,19 @@ body {
     height: 100%;
     opacity: 1;
     border-radius: 46px;
-    border: 12px solid rgb(0, 0, 0);
+    border: 12px solid white;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+#time {
+    color: white;
+    text-shadow: 0px 0px 8px rgba(0,0,0,.1);
+    font-family: 'Lato';
+    top: 20%;
+    position: absolute;
+    font-size: 48px;
 }
 
 #phone:hover #phoneScreenOverlay {
@@ -412,7 +427,7 @@ body {
     height:4%;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
-    background: rgb(0,0,0);
+    background: white;
     z-index: 2;
     -webkit-transition: width .5s; /* Safari */
     transition: width .5s;
@@ -421,10 +436,10 @@ body {
 #earpiece {
     width: 30%;
     height: 25%;
-    background: rgb(34, 34, 34);
+    background: rgb(245, 245, 245);
     border-radius: 5px;
-    border-top: 0px solid rgb(56, 56, 56);
-    border-left: 0px solid rgb(56, 56, 56);
+    border-top: 0px solid rgb(235, 235, 235);
+    border-left: 0px solid rgb(235, 235, 235);
     box-sizing: border-box;
     -webkit-transition: border .5s, width .5s; /* Safari */
     transition: border .5s, width .5s;
@@ -435,20 +450,24 @@ body {
     width: 8px;
     height: 8px;
     border-radius: 8px;
-    background: rgb(27, 34, 46);
+    background: rgb(245, 245, 245);
     transform:translate(38px);
     -webkit-transition: transform .5s; /* Safari */
     transition: transform .5s;
 }
 
 #phone:hover {
-    border-right: 30px solid rgb(187, 137, 62);
-    border-bottom: 30px solid rgb(187, 137, 62);
-    border-top: 0px solid rgb(245, 245, 245); 
+    /* border-right: 26px solid rgb(187, 137, 62);
+    border-bottom: 26px solid rgb(187, 137, 62);
+    border-top: 2px solid rgb(187, 137, 62); 
+    border-left: 0px solid rgb(245, 245, 245); */
+    border-right: 26px solid white;
+    border-bottom: 26px solid white;
+    border-top: 2px solid white; 
     border-left: 0px solid rgb(245, 245, 245);
     border-radius: 50px 75px 75px 75px;
     transform: skewX(-20deg);
-    width: 290px;
+    width: 300px;
     height: 590px;
     /*box-shadow: inset 25px 15px 30px -20px rgba(245, 245, 245, 1); */
     top: 10%;
@@ -460,8 +479,8 @@ body {
 } */
 
 #phone:hover #earpiece {
-    border-top: 2px solid rgb(26, 25, 25);
-    border-left: 2px solid rgb(26, 25, 25);
+    border-top: 2px solid rgb(235, 235, 235);
+    border-left: 2px solid rgb(235, 235, 235);
 }
 
 #phone:hover #camera {
@@ -499,27 +518,27 @@ body {
 #hole {
     height: 100%;
     flex: 1;
-    background-color: black;
+    background: linear-gradient(0deg, rgba(255,255,255,1), rgba(100,100,100,.3) 100%);
     border-radius: 100px;
     margin-left: 1px;
     margin-right: 2px;
-    border-bottom: 1px solid rgb(241, 210, 163);
+    /* border-bottom: 1px solid rgb(241, 210, 163);
     border-left: 1px solid rgb(241, 210, 163);
     border-top: 1px solid rgb(107, 79, 36);
-    border-right: 1px solid rgb(107, 79, 36);
+    border-right: 1px solid rgb(107, 79, 36); */
     box-sizing: border-box;
 }
 
 #phone:hover #bottomGrilleRight {
     opacity: 1;
     height: 8px;
-    bottom: -25px
+    bottom: -21px
 }
 
 #phone:hover #bottomGrilleLeft {
     opacity: 1;
     height: 8px;
-    bottom: -25px
+    bottom: -21px
 }
 
 #card1 {
