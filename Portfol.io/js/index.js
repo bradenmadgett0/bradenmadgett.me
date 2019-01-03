@@ -1,3 +1,28 @@
+
+scrollToContent = function(){
+    scrollToAnimated(document.body, (document.getElementById("content").getBoundingClientRect().top + window.scrollY), 300);
+}
+
+scrollToAnimated = function(element, to, duration) {
+    if(duration <= 0){
+        return;
+    }
+    var diff = to - element.scrollTop;
+    
+    
+
+    var duration = duration * (1 - (window.scrollY / to));
+    var tick = (diff/duration) * 10;
+    var scrollInterval = setInterval(function() {
+        if(element.scrollTop >= to)
+        {
+            clearInterval(scrollInterval);
+            return;
+        }
+        element.scrollTop += tick;
+    }, 10);
+}
+
 // window.addEventListener("load", function(e){
 //     var width = window.innerWidth
 //     || document.documentElement.clientWidth
