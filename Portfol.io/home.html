@@ -2,13 +2,20 @@
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Fira+Sans:300" rel="stylesheet">
         <link rel="stylesheet" href="styles/styles.css" type="text/css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <script type="text/javascript" src="./js/index.js"></script>
     </head>
     <body>
         <div id="navBar">
-            <div id="logo"><div id="logoInside"></div></div>
+            <div id="logo">
+                <div id="border1"></div>
+                <div id="border2"></div>
+                <div id="border3"></div>
+                <div id="border4"></div>
+                <object id="logoImg" data="./styles/images/personal_logo-1.svg" type="image/svg+xml"></object>
+            </div>
             <div id="socialLinks">
                 <i class="fab fa-github"></i>
                 <i class="fab fa-dribbble"></i>
@@ -20,7 +27,19 @@
         <div id="masterContainer">
             <div id="jumbotron">
                 <div id="splashText">
-                    <h1>I create <span id="emphasis">exquisite</span> experiences<br> that drive user engagement.</h1>
+                    <!-- <h1>I create <span id="emphasis">exquisite</span> experiences<br> that drive user engagement.</h1> -->
+                    
+                    <h1 id="mainText">Hi!</h1>
+                    <div id="mainTextLineTwo">
+                        <h1>I'm </h1>
+                        <div id="name">
+                            <h1 id="emphasis">Braden.</h1>
+                            <div id="nameOverlay"><h1>Braden.</h1></div>
+                            <div id="nameOverlayTwo"><h1>Braden.</h1></div>
+                        </div>
+                    </div>
+                    <div id="nameBox"></div>
+                    <h4 id="flavorText">I have a passion for creating beautiful and engaging software.</h4>
                     <!-- <div class="lineContainer" id="one"><div id="maskOne"></div><div class="line" id="one"></div></div>
                     <div class="lineContainer" id="two"><div id="maskTwo"></div><div class="line" id="two"></div></div> -->
                 </div>
@@ -30,7 +49,7 @@
                     <div id="arrowLineCenter"></div>
                     <div id="arrowLineRight"></div>
                 </div>
-                <div id="phoneSection">
+                <!-- <div id="phoneSection">
                         <div id="phone">
                             <div id="notch">
                                 <div id="earpiece"></div>
@@ -57,7 +76,10 @@
                             <div id="chargingPort"></div>
                             <div id="phoneScreenOverlay"></div>
                         </div>
-                </div>    
+                </div>     -->
+            </div>
+            <div id="content">
+                
             </div>
         </div>
     </body>

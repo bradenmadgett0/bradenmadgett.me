@@ -1,15 +1,15 @@
-window.addEventListener("load", function(e){
-    var width = window.innerWidth
-    || document.documentElement.clientWidth
-    || document.body.clientWidth;
+// window.addEventListener("load", function(e){
+//     var width = window.innerWidth
+//     || document.documentElement.clientWidth
+//     || document.body.clientWidth;
 
-    var height = window.innerHeight
-    || document.documentElement.clientHeight
-    || document.body.clientHeight;
+//     var height = window.innerHeight
+//     || document.documentElement.clientHeight
+//     || document.body.clientHeight;
 
-    var phoneElement = document.getElementById("phone");
-    phoneElement.classList.add("perspective");
-});
+//     var phoneElement = document.getElementById("phone");
+//     phoneElement.classList.add("perspective");
+// });
 
 // window.addEventListener("resize", function(e) {
 //     setMinSizePhone();
